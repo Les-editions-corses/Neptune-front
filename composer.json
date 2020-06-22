@@ -1,6 +1,17 @@
 {
     "type": "project",
     "license": "proprietary",
+        "repositories": [{
+            "name": "edcorses/user-profile",
+            "type": "vcs",
+            "url": "git@github.com:Les-editions-corses/UserBundle.git"
+        },
+        {
+            "name": "edcorses/neptune-bundle",
+            "type": "vcs",
+            "url": "git@github.com:Les-editions-corses/NeptuneBundle.git"
+        }
+    ],
     "require": {
         "php": "^7",
         "scylabs/neptune-bundle": "^1",
