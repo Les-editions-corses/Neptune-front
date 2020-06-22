@@ -1,7 +1,7 @@
 {
     "type": "project",
     "license": "proprietary",
-        "repositories": [{
+    "repositories": [{
             "name": "edcorses/user-profile",
             "type": "vcs",
             "url": "git@github.com:Les-editions-corses/UserBundle.git"
@@ -12,17 +12,22 @@
             "url": "git@github.com:Les-editions-corses/NeptuneBundle.git"
         }
     ],
+
     "require": {
         "php": "^7",
-        "edcorses/neptune-bundle": "^1",
-        "edcorses/user-profile": "~1",
-        "scylabs/hook-bundle": "^1",
         "ext-iconv": "*",
         "doctrine/doctrine-bundle": "^1.6",
         "doctrine/orm": "^2.5",
+        "edcorses/neptune-bundle": "^1",
+        "edcorses/user-profile": "~1",
+        "firebase/php-jwt": "^5.2",
+        "lexik/jwt-authentication-bundle": "^2.8",
+        "scylabs/hook-bundle": "^1",
         "sensio/framework-extra-bundle": "^5.1",
+        "spipu/html2pdf": "^5.2",
         "symfony/asset": "^4.1",
         "symfony/console": "^4.1",
+        "symfony/dotenv": "^4.1",
         "symfony/expression-language": "^4.1",
         "symfony/flex": "^1.0",
         "symfony/form": "^4.1",
@@ -37,9 +42,7 @@
         "symfony/twig-bundle": "^4.1",
         "symfony/validator": "^4.1",
         "symfony/web-link": "^4.1",
-        "symfony/yaml": "^4.1",
-        "symfony/dotenv": "^4.1"
-
+        "symfony/yaml": "^4.1"
     },
     "require-dev": {
         "symfony/debug-pack": "*",
