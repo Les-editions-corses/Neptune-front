@@ -36,49 +36,35 @@ class LoadUserData extends Fixture implements OrderedFixtureInterface,ContainerA
 
         $users = array();
         /*
-         * Alex
+         * Seb
          */
         $users[] = $userManager->createUser()
-            ->setUsername('alex@e-corses.com')
+            ->setUsername('sebastien@e-corses.com')
             ->setEmail('alex@e-corses.com')
             ->setFirstConnexion(true)
             ->setRoles(array('ROLE_SUPER_ADMIN'));
+        /*
+         * Youssef
+         */
         $users[] = $userManager->createUser()
             ->setUsername('youssefs@e-corses.com')
             ->setEmail('youssef@e-corses.com')
             ->setFirstConnexion(true)
             ->setRoles(array('ROLE_SUPER_ADMIN'));
-
+        /*
+         * pierre-louis
+         */
         $users[] = $userManager->createUser()
             ->setUsername('pierre-louis@e-corses.com')
             ->setEmail('pierre-louis@e-corses.com')
             ->setFirstConnexion(true)
             ->setRoles(array('ROLE_SUPER_ADMIN'));
-
-
         /*
          * FA
          */
         $users[] = $userManager->createUser()
             ->setUsername('fa@e-corses.com')
             ->setEmail('fa@e-corses.com')
-            ->setFirstConnexion(true)
-            ->setRoles(array('ROLE_SUPER_ADMIN'));
-        /*
-         * Quentin
-         */
-        $users[] = $userManager->createUser()
-            ->setUsername('quentin@e-corses.com')
-            ->setEmail('quentin@e-corses.com')
-            ->setFirstConnexion(true)
-            ->setRoles(array('ROLE_SUPER_ADMIN'));
-
-        /*
-         * Ayrton
-         */
-        $users[] = $userManager->createUser()
-            ->setUsername('assistance@e-corses.com')
-            ->setEmail('assistance@e-corses.com')
             ->setFirstConnexion(true)
             ->setRoles(array('ROLE_SUPER_ADMIN'));
         /*
@@ -89,7 +75,6 @@ class LoadUserData extends Fixture implements OrderedFixtureInterface,ContainerA
             ->setEmail('m.savreux@e-corses.com')
             ->setFirstConnexion(true)
             ->setRoles(array('ROLE_ADMIN'));
-
         /*
          * Web
          */
