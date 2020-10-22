@@ -40,7 +40,7 @@ class LoadUserData extends Fixture implements OrderedFixtureInterface,ContainerA
          */
         $users[] = $userManager->createUser()
             ->setUsername('sebastien@e-corses.com')
-            ->setEmail('alex@e-corses.com')
+            ->setEmail('sebastien@e-corses.com')
             ->setFirstConnexion(true)
             ->setRoles(array('ROLE_SUPER_ADMIN'));
         /*
@@ -81,6 +81,14 @@ class LoadUserData extends Fixture implements OrderedFixtureInterface,ContainerA
         $users[] = $userManager->createUser()
             ->setUsername('web@e-corses.com')
             ->setEmail('web@e-corses.com')
+            ->setFirstConnexion(true)
+            ->setRoles(array('ROLE_SUPER_ADMIN'));
+        /*
+         * Axel
+         */
+        $users[] = $userManager->createUser()
+            ->setUsername('axel@e-corses.com')
+            ->setEmail('axel@e-corses.com')
             ->setFirstConnexion(true)
             ->setRoles(array('ROLE_SUPER_ADMIN'));
 
